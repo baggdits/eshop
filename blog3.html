@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myEshop</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class ="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container d-flex justify-content-between align-items-center order-lg-0">
+        <a class="navbar-brand px-1" href="my.html">
+            <img src="images/bagicon.png" alt="site icon"  class="logo-img">
+            <span class="text-uppercase fw-primary ms-2 brand-text">myEshop</span> 
+        </a>
+<div class="order-lg-2 nav-btns">
+    <button type="button" id="cart-btn" class="btn position-relative bg-transparent" style="border: none; font-size: 1.2rem; margin-right: 1rem;">
+        <i class="fa fa-shopping-cart"></i>
+        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge bg-primary p-1" style="font-size: 0.85rem;">0</span>
+      </button>
+<button type="button" id="header-heart-btn" class="btn position-relative bg-transparent" style="border: none; font-size: 1.2rem; margin-right: 1rem;">
+    <i class="fa fa-heart"></i>
+    <span id="heart-count" class="position-absolute top-0 start-100 translate-middle badge bg-primary p-1" style="font-size: 0.85rem;">0</span>
+  </button>
+  
+  
+  
+    <button type="button" id="search-btn" class="btn position-relative bg-transparent"style="border: none fs-4 me-4;">
+    <i class="fa fa-search"></i>
+</button>
+<input type="text" id="search-input" class="form-control d-none position-absolute top-100 mt-2" placeholder="Search...">
+</div>
+<button class="navbar-toggler border-0 ms-2" type="button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse order-lg-1" id="navMenu">
+<ul class="navbar-nav mx-auto text-center">
+    <li class="my-item px-1 py-2">
+        <a class="nav-link text-uppercase text-dark" href="my.html#header">Home</a>
+    </li>
+    <li class="my-item px-1 py-2">
+        <a class="nav-link text-uppercase text-dark" href="my.html#collection">Collection</a>
+    </li>
+    <li class="my-item px-1 py-2">
+        <a class="nav-link text-uppercase text-dark" href="my.html#specials">Specials</a>
+    </li>
+    <li class="my-item px-1 py-2">
+        <a class="nav-link text-uppercase text-dark" href="my.html#blogs">Blogs</a>
+    </li>
+    <li class="my-item px-1 py-2">
+        <a class="nav-link text-uppercase text-dark" href="my.html#aboutus">About Us</a>
+    </li>
+    <li class="my-item px-1 py-2 border-0">
+        <a class="nav-link text-uppercase text-dark" href="my.html#bestsails">Best Sails</a>
+    </li>
+</ul>
+</div>
+ </div>
+    </nav>
+
+
+
+
+  
+
+
+
+
+    
+    <!--Blogs-->
+    <section id="blogs" class="py-5">
+        <div class="container">
+          <div class="tittle text-center py-5">
+            <h2 class="position-relative d-inline-block">Our Latest Blog</h2>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <img src="images/blog1.jpg" class="img-fluid mb-4 mx-auto d-block imgblog" alt="Blog Image" style="width: 1000px;">
+              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci corporis, veritatis beatae maxime ad rem commodi, dicta impedit error sint alias, id ab magnam temporibus nisi neque inventore officiis optio</h4>
+              <p class="text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sapiente placeat nisi optio, tempore ex commodi consequuntur, rem distinctio repellat eligendi quis accusamus ullam asperiores reprehenderit maiores sed? Deleniti, nesciunt.</p>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptate nobis in consequuntur culpa exercitationem rem amet, nihil illum, nisi ea maiores et nam voluptatum earum soluta porro at accusamus! Eum, id repellat blanditiis perferendis itaque laboriosam, molestiae facilis eaque explicabo rem qui, veritatis officia! Quod impedit rerum ab sunt.</p>
+              <p class="text-muted">
+                <small><span class="fw-bold">Author:</span> Unknown</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+
+
+
+    
+
+<!--newsletter-->
+<section id="newsletter" clss="py-5">
+    <div class="container">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="tittle text-center pt-3 pb-5">
+                <h2 class="position-relative d-inline-block ms4">Newsletter Subscription</h2>
+                
+            </div>
+            <p class="text-center text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima consequuntur eos tenetur animi veritatis voluptatem!</p>
+            <div class="input-group mb-3 mt-3">
+                <input type="text" class="form-control"placeholder="Enter your Email...">
+                <button class="btn btn-primary" type="submit">Subscribe
+            </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer class="bg-dark py-5">
+    <div class="container">
+        <div class="row text-white g-4">
+            <div class="col-md-6 col-lg-3">
+                <a class="text-uppercase text-decoration-none fs-4 me-4 brand text-white"href="my.html">MyEshop</a>
+                <p class="mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptatibus neque enim amet dignissimos ex reprehenderit, quam omnis doloremque quibusdam ut, nobis deleniti voluptates. Beatae, enim! At perspiciatis doloribus aliquam!</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light">Links</h5>
+                <ul class="">
+                    <li class="my-3">
+                        <a href="my.html" class="text-white text-decoration-none fs-4 me-4">
+                            <i class="fas fa-chevron-right me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="my.html#collection" class="text-white text-decoration-none fs-4 me-4">
+                            <i class="fas fa-chevron-right me-1"></i>Collection
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="my.html#blogs" class="text-white text-decoration-none fs-4 me-4">
+                            <i class="fas fa-chevron-right me-1"></i>Blogs
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="my.html#aboutus" class="text-white text-decoration-none fs-4 me-4">
+                            <i class="fas fa-chevron-right me-1"></i>About Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light mb-3">Contact Us</h5>
+                <div class="d-flex justify-content-start align-items-start my-2">
+                    <span class="">
+                        <i class="fas fa-map-marked-alt mx-2"></i>
+                    </span>
+                    <span class="fw-light">Megalou Alexandrou 5 Kastoria, 52100, Ellada</span>
+                </div>
+                <div class="d-flex justify-content-start align-items-start my-2">
+                    <span class="">
+                        <i class="fas fa-envelope mx-2"></i>
+                    </span>
+                    <span class="fw-light">MyEshop@support.gr</span>
+                </div>
+                <div class="d-flex justify-content-start align-items-start my-2">
+                    <span class="">
+                        <i class="fas fa-phone-alt mx-2"></i>
+                    </span>
+                    <span class="fw-light">2467077777</span>
+                </div>
+            </div>
+        <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">
+                <div class="d-flex">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="https://www.facebook.com" class="text-white text-decoration-none fs-4 me-4"target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com" class="text-white text-decoration-none fs-4 me-4"target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.x.com" class="text-white text-decoration-none fs-4 me-4"target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </h5>
+        </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script src ="/jquery-3.7.1.min.js"></script> 
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script> 
+<script src="script.js"></script>
+
+</body>
+</html>
