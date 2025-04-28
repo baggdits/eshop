@@ -10,6 +10,8 @@ var $grid = $('.collection-list').isotope({
     $grid.isotope({ filter: filterValue });
   });
 
+  
+
 var filterBtns=$('.filter-button-group').find('button');
 function resetFilterBtns(){
     filterBtns.each(function(){
@@ -375,3 +377,39 @@ function renderAverageStars() {
             }
         });
     });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get the navbar toggler button and the collapse element
+      const navbarToggler = document.getElementById('navbarTogglerButton');
+      const navbarCollapse = document.getElementById('navMenu');
+  
+      // Initialize Bootstrap's Collapse component manually
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: false  // Don't toggle automatically, we'll handle it manually
+      });
+  
+      // Add event listener to the toggler button to open/close the navbar
+      navbarToggler.addEventListener('click', function () {
+        // Toggle the collapse manually
+        if (navbarCollapse.classList.contains('show')) {
+          bsCollapse.hide();  // Close the navbar
+        } else {
+          bsCollapse.show();  // Open the navbar
+        }
+      });
+  
+      // Close the navbar when a link is clicked
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          if (navbarCollapse.classList.contains('show')) {
+            bsCollapse.hide();  // Close the navbar when a link is clicked
+          }
+        });
+      });
+    });
+
+
+   
+
