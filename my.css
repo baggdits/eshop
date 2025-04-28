@@ -303,7 +303,7 @@ font-family: var(--lg-font);
         font-size: 0.5rem; 
       }
   }
-  @media (max-width: 360px) {
+  @media (max-width: 375px) {
     .logo-img {
       width: 25%;
       height: 25px;
